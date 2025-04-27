@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import TitleHeader from "../components/HeroModel/TitleHeader";
 
-
+import emailjs from  "@emailjs/browser";
 const Contact = () =>{
+  const formRef = useRef(null);
   const [loading,setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -13,8 +14,28 @@ const Contact = () =>{
     const {name,value} = e.target;
     setForm({...form,[name]:value})
   }
-  const handleSubmit = () =>{
-    console.log(form)
+  const handleSubmit = async(e) =>{
+    e.preventDefault();
+    setLoading(true);
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+
+      setForm({
+        name: "",
+        email: "",
+        message: "",})
+
+    } catch (error) {
+    console.log("Emailjs Error",error)  
+    }
+    finally{
+      setLoading(false);
+    }
   }
 
   return(
@@ -28,6 +49,7 @@ const Contact = () =>{
 
     <div className="flex-center card-border rounded-xl p-10 w-[40%] max-md:w-[80%] max-sm:w-full">
       <form 
+      ref={formRef}
        onSubmit={handleSubmit}
        className="w-full flex flex-col gap-7"
       >
