@@ -49,9 +49,10 @@ const ShowcaseSection =()=>{
             <img src="/images/project1.png" alt="Ryde"/>
           </div>
           <div className="text-content">
-            <h2>On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde</h2>
+            <h2>Prepwise - AI Interviewer</h2>
             <p className="text-white-50 md:text-xl">
-              An App built with React Native,Expo & TailwindCSS for a fast,user-friendly experience.
+             A modern website built using React, Three.js, and Tailwind CSS.
+Designed for a fast, interactive, and user-friendly experience.
             </p>
           </div>
         </div>
