@@ -45,8 +45,8 @@ const ShowcaseSection =()=>{
       <div className="showcaselayout">
         {/* left */}
         <div className="first-project-wrapper" ref={project1Ref}>
-          <div className="image-wrapper">
-            <img src="/images/project1.png" alt="Ryde" className="max-md:w-full h-100"/>
+          <div className="image-wrapper bg-[#0a0a0a] max-md:h-[34vh]" >
+            <img src="/images/project1.png" alt="Ryde" />
           </div>
           <div className="text-content">
             <h2>Prepwise - AI Interviewer</h2>
