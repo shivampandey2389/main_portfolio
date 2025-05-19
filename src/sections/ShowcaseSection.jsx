@@ -60,8 +60,8 @@ Designed for a fast, interactive, and user-friendly experience.
         {/* right */}
         <div className="project-list-wrapper overflow-hidden">
           <div className="project"  ref={project2Ref}>
-            <div className="image-wrapper bg-[#ffefdb]">
-              <img src="/images/project2.png" alt="Library Management Platform" />
+            <div className="image-wrapper p-10 bg-gradient-to-bl from-[#4b90db] to-[#fff]">
+              <img src="/images/project2.png" alt="real estate app"  />
             </div>
           </div>
 
