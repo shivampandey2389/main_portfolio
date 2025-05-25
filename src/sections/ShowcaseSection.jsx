@@ -66,7 +66,7 @@ Designed for a fast, interactive, and user-friendly experience.
           </div>
 
           <div className="project" ref={project3Ref}>
-            <div className="image-wrapper bg-[#ffe7eb]">
+            <div className="image-wrapper bg-[#333232]">
               <img src="/images/project3.png" alt="YC Directory" />
             </div>
             <h2>YC Directory - A Startup Showcase App</h2>
