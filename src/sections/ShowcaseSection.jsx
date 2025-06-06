@@ -66,10 +66,10 @@ Designed for a fast, interactive, and user-friendly experience.
           </div>
 
           <div className="project" ref={project3Ref}>
-            <div className="image-wrapper bg-[#333232]">
+            <div className="image-wrapper bg-[#191e24]">
               <img src="/images/project3.png" alt="YC Directory" />
             </div>
-            <h2>YC Directory - A Startup Showcase App</h2>
+            <h2>Chat App – Stay Connected, No Matter the Distance</h2>
           </div>
         </div>
       </div>
