@@ -218,7 +218,7 @@ const socialImgs = [
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/shivam-pandey-0840462a2/",
+    url: "https://www.linkedin.com/in/shivam-pandey-45769b2a0",
     imgPath: "/images/linkedin.png",
   },
 ];
